@@ -14,3 +14,6 @@ class TestsAdd(unittest.TestCase):
         expected_result = add_function(self.numbers)
         self.assertEqual([], expected_result)
 
+    def test_return_list_of_ints(self):
+        expected_result = add_function(self.numbers)
+        self.assertEqual([1,2,3,1], expected_result)
