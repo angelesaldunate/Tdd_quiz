@@ -10,3 +10,7 @@ class TestsAdd(unittest.TestCase):
         expected_result = add_function(self.numbers)
         self.assertEqual(True, expected_result )
 
+    def test_add_return_list(self):
+        expected_result = add_function(self.numbers)
+        self.assertEqual([], expected_result)
+
