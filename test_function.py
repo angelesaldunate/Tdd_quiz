@@ -12,7 +12,7 @@ class TestsAdd(unittest.TestCase):
 
     def test_add_return_list(self):
         expected_result = add_function(self.numbers)
-        self.assertEqual([], expected_result)
+        self.assertIsInstance(expected_result, list)
 
     def test_return_list_of_ints(self):
         expected_result = add_function(self.numbers)
