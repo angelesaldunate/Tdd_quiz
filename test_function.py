@@ -12,13 +12,8 @@ class TestsAdd(unittest.TestCase):
 
     def test_add_return_list(self):
         expected_result = add_function(self.numbers)
-        self.assertIsInstance(expected_result, list)
-
-    def test_return_list_of_ints(self):
-        expected_result = add_function(self.numbers)
-        self.assertEqual([1,2,3,1], expected_result)
+        self.assertIsInstance(expected_result, int)
 
     def test_sum_of_numbers(self):
         expected_result = add_function(self.numbers)
         self.assertEqual(7, expected_result)
-        
