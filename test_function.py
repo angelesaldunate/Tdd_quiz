@@ -8,7 +8,7 @@ class TestsAdd(unittest.TestCase):
 
     def test_add_receiving_string(self):
         expected_result = add_function(self.numbers)
-        self.assertEqual(True, expected_result )
+        self.failureException(False, expected_result )
 
     def test_add_return_list(self):
         expected_result = add_function(self.numbers)
