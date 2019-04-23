@@ -17,3 +17,7 @@ class TestsAdd(unittest.TestCase):
     def test_sum_of_numbers(self):
         expected_result = add_function(self.numbers)
         self.assertEqual(7, expected_result)
+
+    def test_specify_string(self):
+        expected_result = add_function(self.numbers, ";")
+        self.assertEqual(7, expected_result)
